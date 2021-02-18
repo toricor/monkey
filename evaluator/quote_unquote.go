@@ -22,7 +22,7 @@ func evalUnquoteCalls(quoted ast.Node, env *object.Environment) ast.Node {
 		if !ok {
 			return node
 		}
-		fmt.Println(call.Arguments)
+
 		if len(call.Arguments) != 1 {
 			return node
 		}
