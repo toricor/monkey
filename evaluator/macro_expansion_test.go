@@ -29,7 +29,7 @@ func TestDefineMacros(t *testing.T) {
 	if ok {
 		t.Fatalf("number should not be defined")
 	}
-	_, ok := env.Get("function")
+	_, ok = env.Get("function")
 	if ok {
 		t.Fatalf("function should not be defined")
 	}
